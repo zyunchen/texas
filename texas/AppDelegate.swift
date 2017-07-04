@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -40,7 +41,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    // MARK: Core Data Stack
+    
+    lazy var persistantContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "TexasDataModel")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let nserror = error as NSError? {
+                fatalError("\(nserror)")
+            }
+        })
+        return container
+    }()
+    
+    func saveContext() {
+        let context = persistantContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError(nserror.localizedDescription)
+            }
+        }
+    }
 
 }
 
