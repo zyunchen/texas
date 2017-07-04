@@ -19,7 +19,7 @@ class recordTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        headerIcon.image = UIImage(named: "001-contract")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

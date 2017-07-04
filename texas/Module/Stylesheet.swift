@@ -8,7 +8,11 @@
 
 import UIKit
 
-let texasLightgrey = UIColor(rgb:0xEEEEEE)
+let texasLightgrey = UIColor(rgb: 0xEEEEEE) // http://www.flatuicolorpicker.com/category/gray
+let texasDeepGreen = UIColor(rgb: 0x1BBC9B) //http://www.flatuicolorpicker.com/category/green
+
+
+
 
 
 extension UIColor {
