@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - Spring (1.0.3)
+  - TaniwhaTextField (1.0)
+
+DEPENDENCIES:
+  - Charts
+  - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
+  - TaniwhaTextField
+
+EXTERNAL SOURCES:
+  Spring:
+    :branch: swift3
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 8201b5c93bd7ebdf4cd18160bcde1e6e88c2be64
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  TaniwhaTextField: ee9ba7582002e9fc71a55ec9c97c45eb8663b05f
+
+PODFILE CHECKSUM: de963d38c63937c839fbcc16007bb2494b02d74b
+
+COCOAPODS: 1.2.1
