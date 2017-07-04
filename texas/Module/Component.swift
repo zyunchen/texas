@@ -16,6 +16,6 @@ class Component: NSObject {
     class var shared: Component {
         return _componentInstance
     }
-    
+    //write alertview here
     
 }
