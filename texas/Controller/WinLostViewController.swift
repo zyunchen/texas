@@ -12,7 +12,8 @@ class WinLostViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = ""
+        self.navigationItem.title = "德州扑克账本"
+        
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
@@ -25,23 +26,29 @@ class WinLostViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 3
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "careerSumSectionCell", for: indexPath) as? CareerSumSectionViewCell
+            return cell ?? UITableViewCell()
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "graphSectionCell", for: indexPath) as? GraphTableViewCell
+            
+            return cell ?? UITableViewCell()
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "recordCell", for: indexPath) as? GraphTableViewCell
+            
+            return cell ?? UITableViewCell()
+        }
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

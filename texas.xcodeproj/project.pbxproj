@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0522E26C1F0B98CC00A155AB /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E26B1F0B98CC00A155AB /* Record.swift */; };
 		0522E26E1F0B9D9300A155AB /* WinLostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E26D1F0B9D9300A155AB /* WinLostViewController.swift */; };
+		0522E2701F0BA07200A155AB /* CareerSumSectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E26F1F0BA07200A155AB /* CareerSumSectionViewCell.swift */; };
+		0522E2721F0BA81300A155AB /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2711F0BA81300A155AB /* GraphTableViewCell.swift */; };
+		0522E2741F0BA89900A155AB /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2731F0BA89900A155AB /* Stylesheet.swift */; };
+		0522E2761F0BB3DB00A155AB /* recordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2751F0BB3DB00A155AB /* recordTableViewCell.swift */; };
+		0522E2781F0BB49500A155AB /* recordDisplayTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522E2771F0BB49500A155AB /* recordDisplayTableView.swift */; };
 		05953D241F0B3FF40031D4BF /* TexasDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05953D221F0B3FF40031D4BF /* TexasDataModel.xcdatamodeld */; };
 		0C0FED9C17CA050FBE9AEAF6 /* Pods_texas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2303847B538B647A93E9C6B9 /* Pods_texas.framework */; };
 		3B8A44434A9CAEE76CD3753E /* Pods_texasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CB680742A7DE0453014018 /* Pods_texasUITests.framework */; };
@@ -41,6 +46,11 @@
 /* Begin PBXFileReference section */
 		0522E26B1F0B98CC00A155AB /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		0522E26D1F0B9D9300A155AB /* WinLostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinLostViewController.swift; sourceTree = "<group>"; };
+		0522E26F1F0BA07200A155AB /* CareerSumSectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareerSumSectionViewCell.swift; sourceTree = "<group>"; };
+		0522E2711F0BA81300A155AB /* GraphTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
+		0522E2731F0BA89900A155AB /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
+		0522E2751F0BB3DB00A155AB /* recordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordTableViewCell.swift; sourceTree = "<group>"; };
+		0522E2771F0BB49500A155AB /* recordDisplayTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordDisplayTableView.swift; sourceTree = "<group>"; };
 		05953D231F0B3FF40031D4BF /* TexasDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TexasDataModel.xcdatamodel; sourceTree = "<group>"; };
 		2303847B538B647A93E9C6B9 /* Pods_texas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_texas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		318C1DA049DDA0A37F818FC0 /* Pods-texas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-texas.release.xcconfig"; path = "Pods/Target Support Files/Pods-texas/Pods-texas.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				0522E26B1F0B98CC00A155AB /* Record.swift */,
+				0522E2731F0BA89900A155AB /* Stylesheet.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -112,6 +123,10 @@
 		0522E26A1F0B97FE00A155AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0522E26F1F0BA07200A155AB /* CareerSumSectionViewCell.swift */,
+				0522E2711F0BA81300A155AB /* GraphTableViewCell.swift */,
+				0522E2751F0BB3DB00A155AB /* recordTableViewCell.swift */,
+				0522E2771F0BB49500A155AB /* recordDisplayTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,10 +492,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0522E2721F0BA81300A155AB /* GraphTableViewCell.swift in Sources */,
 				05953D241F0B3FF40031D4BF /* TexasDataModel.xcdatamodeld in Sources */,
 				0522E26E1F0B9D9300A155AB /* WinLostViewController.swift in Sources */,
+				0522E2781F0BB49500A155AB /* recordDisplayTableView.swift in Sources */,
 				0522E26C1F0B98CC00A155AB /* Record.swift in Sources */,
+				0522E2741F0BA89900A155AB /* Stylesheet.swift in Sources */,
 				6CAF9CE51F092520009787BE /* AppDelegate.swift in Sources */,
+				0522E2761F0BB3DB00A155AB /* recordTableViewCell.swift in Sources */,
+				0522E2701F0BA07200A155AB /* CareerSumSectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
