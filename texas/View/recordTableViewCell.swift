@@ -14,11 +14,17 @@ class recordTableViewCell: UITableViewCell {
     
     @IBOutlet weak var customeBackgroundView: UIView!
     
+    
+    
+    
     @IBOutlet weak var recordTableview: recordDisplayTableView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        customeBackgroundView.layer.cornerRadius = 10
+        recordTableview.layer.borderColor = texasLightgrey.cgColor
+        recordTableview.layer.borderWidth = 1
         headerIcon.image = UIImage(named: "001-contract")
     }
 

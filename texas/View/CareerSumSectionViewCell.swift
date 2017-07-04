@@ -34,11 +34,13 @@ class CareerSumSectionViewCell: UITableViewCell {
         headerIcon.image = UIImage(named: "002-user")
         
         totalGames.backgroundColor = UIColor.white
+        totalGames.text = "0"
         totalProfit.backgroundColor = UIColor.white
+        totalProfit.text = "0"
         totalGamePeriod.backgroundColor = UIColor.white
+        totalGamePeriod.text = "0"
         winnerRate.backgroundColor = UIColor.white
-        
-        
+        winnerRate.text = "0"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

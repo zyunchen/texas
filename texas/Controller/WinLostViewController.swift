@@ -14,14 +14,14 @@ class WinLostViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.title = "德州扑克账本"
         
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "006-add"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(WinLostViewController.rightBarButtonAction))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func rightBarButtonAction() {
+        print("hhaa")
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
