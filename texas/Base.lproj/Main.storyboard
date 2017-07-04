@@ -203,13 +203,13 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="WinnerRate" destination="8mk-pb-59C" id="DfJ-vc-ubt"/>
                                     <outlet property="customeBackgroundView" destination="g7Q-Cv-E4m" id="xjO-pj-iSo"/>
                                     <outlet property="customeSubLayerView" destination="G7c-6t-XH6" id="Lh8-ok-sNi"/>
                                     <outlet property="headerIcon" destination="6eW-Dx-TAS" id="hbf-qn-Etl"/>
                                     <outlet property="totalGamePeriod" destination="z28-7y-5gI" id="n61-Z4-uke"/>
                                     <outlet property="totalGames" destination="Xq1-P5-vNk" id="y23-mg-kZb"/>
                                     <outlet property="totalProfit" destination="FlU-I3-VX9" id="vfT-Fl-ycK"/>
+                                    <outlet property="winnerRate" destination="8mk-pb-59C" id="d53-nR-DlU"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="graphSectionCell" id="IW7-fp-7QL" customClass="GraphTableViewCell" customModule="texas" customModuleProvider="target">
