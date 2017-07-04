@@ -1,0 +1,6 @@
+framework module Pods_texasUITests {
+  umbrella header "Pods-texasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
