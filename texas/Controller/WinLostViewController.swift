@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Spring
 
 class WinLostViewController: UITableViewController {
 
@@ -14,12 +15,16 @@ class WinLostViewController: UITableViewController {
         super.viewDidLoad()
         self.navigationItem.title = "德州扑克账本"
         
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "006-add"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(WinLostViewController.rightBarButtonAction))
+        let button = UIButton.init(type: .custom)
+        button.setImage(UIImage.init(named: "006-add"), for: UIControlState.normal)
+        button.addTarget(self, action:#selector(WinLostViewController.rightBarButtonAction), for: UIControlEvents.touchUpInside)
+        button.frame = CGRect.init(x: 0, y: 0, width: 20, height: 20)
+        let barButton = UIBarButtonItem.init(customView: button)
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
     func rightBarButtonAction() {
-        print("hhaa")
+        //self.navigationItem.rightBarButtonItem
     }
     
     // MARK: - Table view data source

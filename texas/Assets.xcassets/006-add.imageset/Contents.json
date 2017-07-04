@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "add.png",
+      "filename" : "plus-symbol.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "add (1).png",
       "scale" : "2x"
     },
     {
