@@ -5,9 +5,12 @@ use_frameworks!
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 pod 'TaniwhaTextField'
 pod 'Charts'
+pod 'LeanCloud'
+
 
 target 'texas' do
   use_frameworks!
+  
   target 'texasTests' do
     inherit! :search_paths
   end

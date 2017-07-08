@@ -89,12 +89,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Charts/Charts.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LeanCloud/LeanCloud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TaniwhaTextField/TaniwhaTextField.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Charts/Charts.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LeanCloud/LeanCloud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Spring/Spring.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TaniwhaTextField/TaniwhaTextField.framework"
 fi
