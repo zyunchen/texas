@@ -25,7 +25,6 @@
 		6CAF9CFA1F092520009787BE /* texasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAF9CF91F092520009787BE /* texasTests.swift */; };
 		6CAF9D051F092520009787BE /* texasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAF9D041F092520009787BE /* texasUITests.swift */; };
 		6CF3AF271F10D23400A96280 /* NewsTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3AF261F10D23400A96280 /* NewsTabViewCell.swift */; };
-		6CF3AF291F10DF9F00A96280 /* CommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3AF281F10DF9F00A96280 /* CommonTool.swift */; };
 		A531A0FCFDD95065374EFDD3 /* Pods_texasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E745C6488CF2806BC29C09 /* Pods_texasTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +71,6 @@
 		6CAF9D041F092520009787BE /* texasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = texasUITests.swift; sourceTree = "<group>"; };
 		6CAF9D061F092520009787BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CF3AF261F10D23400A96280 /* NewsTabViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTabViewCell.swift; sourceTree = "<group>"; };
-		6CF3AF281F10DF9F00A96280 /* CommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTool.swift; sourceTree = "<group>"; };
 		8B9574C853BBB435666BD588 /* Pods-texasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-texasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-texasTests/Pods-texasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3314ABF3619E9A829AB92E /* Pods-texas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-texas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-texas/Pods-texas.debug.xcconfig"; sourceTree = "<group>"; };
 		A007E53CDBEAB88D85E96CD5 /* Pods-texasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-texasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-texasUITests/Pods-texasUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				6CAF9CED1F092520009787BE /* LaunchScreen.storyboard */,
 				6CAF9CF01F092520009787BE /* Info.plist */,
 				05953D221F0B3FF40031D4BF /* TexasDataModel.xcdatamodeld */,
-				6CF3AF281F10DF9F00A96280 /* CommonTool.swift */,
 			);
 			path = texas;
 			sourceTree = "<group>";
@@ -519,7 +516,6 @@
 				0522E2761F0BB3DB00A155AB /* recordTableViewCell.swift in Sources */,
 				6CF3AF271F10D23400A96280 /* NewsTabViewCell.swift in Sources */,
 				0522E2701F0BA07200A155AB /* CareerSumSectionViewCell.swift in Sources */,
-				6CF3AF291F10DF9F00A96280 /* CommonTool.swift in Sources */,
 				0522E27C1F0BC29E00A155AB /* Component.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,21 +29,11 @@ class NewsTableViewCell: UITableViewCell {
     
     func initBanner(_ url:String,title:String){
         let url = URL(string:url)
-        SDWebImageManager.sharedManager().downloadImage(with: url, options: SDWebImageOptions(), progress: { (now:Int, all:Int) in
-            print("haha",terminator:"")
-        }) { (image:UIImage, error:NSError, cacheType:SDImageCacheType, finished:Bool, imageURL:NSURL) in
-            
+        SDWebImageManager.shared().downloadImage(with: url, options: SDWebImageOptions.cacheMemoryOnly, progress: { (now, total) in
+            //hahah
+        }) { (newImage, error, SDImageCacheType, finished, imageURL) in
+            self.banner.image = Component.shared.setImageRight(imageView: self.banner, image: newImage)
         }
-        
-        (UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL)
-//        SDWebImageManager.sharedManager().downloadImageWithURL(url, options: SDWebImageOptions(), progress: { (now:Int, all:Int) -> Void in
-//            
-//            print("haha", terminator: "")
-//        }) { (image, error:NSError!, cacheType:SDImageCacheType, finished:Bool, imageURL:URL!) -> Void in
-//        
-////            self.banner.image = CommonTool.setImageRight(imageView: self.banner, image: image)
-//        }
-//        
         bannerTitle.text = title
     }
     

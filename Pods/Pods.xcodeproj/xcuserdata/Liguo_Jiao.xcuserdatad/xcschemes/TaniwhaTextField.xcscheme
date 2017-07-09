@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DEB010DD7D8C79FB82818E4A4CFE6984'
+               BlueprintIdentifier = 'CD235C58E81E0D6B40834740B9A9E5B4'
                BlueprintName = 'TaniwhaTextField'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TaniwhaTextField.framework'>

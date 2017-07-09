@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BB2A28FF62052311DFEC35FBFB693712'
-               BlueprintName = 'Spring'
+               BlueprintIdentifier = '3E01143F3C6C5F4C651109AE4A7F4DAA'
+               BlueprintName = 'LeanCloud'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Spring.framework'>
+               BuildableName = 'LeanCloud.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
