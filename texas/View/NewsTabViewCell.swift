@@ -31,7 +31,8 @@ class NewsTableViewCell: UITableViewCell {
         let url = URL(string:url)
         SDWebImageManager.shared().downloadImage(with: url, options: SDWebImageOptions.cacheMemoryOnly, progress: { (now, total) in
             //hahah
-        }) { (newImage, error, SDImageCacheType, finished, imageURL) in
+        }) { (newImage, error, cacheType, finished, imageURL) in
+            
             self.banner.image = Component.shared.setImageRight(imageView: self.banner, image: newImage)
         }
         bannerTitle.text = title
