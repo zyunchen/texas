@@ -6,6 +6,7 @@ pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3
 pod 'TaniwhaTextField'
 pod 'Charts'
 pod 'LeanCloud'
+pod 'SDWebImage', '~>3.8'
 
 
 target 'texas' do
